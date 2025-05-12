@@ -1,0 +1,8 @@
+dash
+pandas
+nltk
+textblob
+scikit-learn
+wordcloud
+NRCLex
+gunicorn
