@@ -13,6 +13,13 @@ nltk.download('vader_lexicon')
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 nltk.download('punkt')
 nltk.download('stopwords')
+nltk.download('averaged_perceptron_tagger')  # part-of-speech tagger
+nltk.download('wordnet')               # lemmatizer
+nltk.download('brown')                 # required by TextBlob’s default corpora
+from textblob import download_corpora
+download_corpora.download_all()
+
+
 
 # Configure page layout
 st.set_page_config(page_title="MoMA Reviews Dashboard", layout="wide")
