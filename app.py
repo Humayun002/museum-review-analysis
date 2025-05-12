@@ -1,12 +1,18 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import nltk
 import plotly.express as px
 from textblob import TextBlob
 from nrclex import NRCLex
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from wordcloud import WordCloud, STOPWORDS
 from sklearn.feature_extraction.text import CountVectorizer
+# make sure the VADER lexicon is available
+nltk.download('vader_lexicon')
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+nltk.download('punkt')
+nltk.download('stopwords')
 
 # Configure page layout
 st.set_page_config(page_title="MoMA Reviews Dashboard", layout="wide")
