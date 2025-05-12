@@ -1,10 +1,8 @@
-streamlit
+dash
 pandas
-numpy
-plotly
-textblob
-nrclex
 nltk
-vaderSentiment
+textblob
 scikit-learn
 wordcloud
+NRCLex
+gunicorn
